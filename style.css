@@ -1,0 +1,75 @@
+body{
+  text-align: center;
+  position: absolute;
+}
+
+#coolbutton,#yes {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#coolbutton:hover {
+  background-color: cyan;
+}
+
+#coolbutton:active {
+  transform: scale(0.95);
+}
+
+
+#sure{
+  position: relative;
+  left: 100px;
+  top: 150px;
+  color: red;
+}
+
+#sure, #buttons, #miss, #yes, #same{
+  position: relative;
+  left: 100px;
+  top: 150px;
+}
+
+#same {
+  color: magenta;
+  transition: 3s;
+  opacity: 0;
+  z-index: 3;
+}
+
+#same.show{
+  opacity: 1;
+}
+
+
+
+
+
+#jumpscare{
+  width: 100%;
+  height: 100%;
+  position: fixed; /* Makes the image stay in place even if the page is scrollable */
+  top: 0;
+  left: 0;
+}
+
+#secQ{
+display: none;
+}
+
+#thiQ{
+display: none;
+}
+
+
+
+@keyframe sameKeyframe{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
